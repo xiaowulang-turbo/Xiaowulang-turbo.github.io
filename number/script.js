@@ -1,21 +1,9 @@
 'use strict';
 
-/*
-console.log(document.querySelector('.message').textContent);
-//document.querySelector('.message').textContent = '🎉 Good Guess!';
-document.querySelector('.number').textContent = 23;
-
-document.querySelector('.score').textContent = 26;
-
-document.querySelector('.guess').value = 45;
-*/
-
 let secretNumber = Math.trunc(Math.random() * 100) + 1;
 //document.querySelector('.number').textContent = secretNumber;
 let score = 100;
 let highScore = 0;
-
-//document.querySelector('.highscore').textContent = highScore;
 
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
@@ -31,7 +19,7 @@ document.querySelector('.check').addEventListener('click', function () {
     if (guess !== secretNumber) {
       displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
       if (score > 1) {
-        score--;
+        score-=5;
         document.querySelector('.score').textContent = score;
       } else {
         score = 0;
