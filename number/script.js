@@ -41,7 +41,7 @@ document.querySelector('.check').addEventListener('click', function () {
 document.querySelector('.again').addEventListener('click', function () {
   let guess = Number((document.querySelector('.guess').value = ''));
   displayMessage('Start guessing...');
-  document.querySelector('body').style.backgroundColor = '#000';
+  document.querySelector('body').style.backgroundColor = '#eee';
   document.querySelector('.number').style.width = '15rem';
   score = 100;
   document.querySelector('.score').textContent = score;
