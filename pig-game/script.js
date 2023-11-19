@@ -33,8 +33,8 @@ const playerChange = function () {
 btnRoll.addEventListener("click", function () {
   const dice = Number(Math.trunc(Math.random() * 6 + 1));
   diceEl.classList.remove("hidden");
-  diceEl.src = `dice-${dice}.png`;
-  console.log(`dice=${dice}`);
+  diceEl.src = `pig-game/dice-${dice}.png`;
+  //console.log(`dice=${dice}`);
   //console.log(currentScoreEl.id);
   if (dice === 1) {
     currentScore = 0;
