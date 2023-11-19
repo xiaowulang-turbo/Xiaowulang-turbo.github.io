@@ -45,6 +45,9 @@ btnHold.addEventListener("click", function () {
   if (flag == 1) {
     score = Number(document.querySelector(`#score--${player}`).textContent);
     score += Number(currentScore);
+    document.querySelector(`#score--${player}`).textContent = score;
+    currentScore = 0;
+    document.getElementById(`current--${player}`).textContent = currentScore;
     if (score >= 30) {
       document
         .querySelector(`.player--${player}`)
@@ -53,10 +56,7 @@ btnHold.addEventListener("click", function () {
     } else {
       playerChange();
     }
-    document.querySelector(`#score--${player}`).textContent = score;
-    currentScore = 0;
     score = 0;
-    document.getElementById(`current--${player}`).textContent = currentScore;
   }
 
   //currentScore.textContent
