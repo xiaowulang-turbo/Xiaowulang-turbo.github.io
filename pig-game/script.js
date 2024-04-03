@@ -36,7 +36,6 @@ btnRoll.addEventListener("click", function () {
     } else {
       currentScore += dice;
     }
-    //console.log(`currentScore=${currentScore}`);
     document.getElementById(`current--${player}`).textContent = currentScore;
   }
 });
@@ -58,8 +57,6 @@ btnHold.addEventListener("click", function () {
     }
     score = 0;
   }
-
-  //currentScore.textContent
 });
 
 btnNew.addEventListener("click", function () {
