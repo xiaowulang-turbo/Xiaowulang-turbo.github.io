@@ -103,7 +103,6 @@ const renderDetails = async (area, version, path, page = 1, callTime = 1) => {
     pageSum = Math.ceil(data.length / ITEMS_PER_PAGE);
     start = (page - 1) * ITEMS_PER_PAGE;
     end = page * ITEMS_PER_PAGE;
-    console.log(start, end);
     data.slice(start, end).forEach((item) => renderItem(item));
     controlPagination(pageSum);
     if (callTime) detailPagination.scrollIntoView();
