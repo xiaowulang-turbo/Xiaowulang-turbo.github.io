@@ -150,6 +150,7 @@ inputIdcardnumber.addEventListener("blur", function () {
 });
 
 inputSubmit.addEventListener("click", function (e) {
+  checkValid(inputAccount);
   checkValid(inputPassword);
   checkValid(inputPasswordEnsure);
   checkValid(inputEmail);
