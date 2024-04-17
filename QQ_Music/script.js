@@ -103,6 +103,7 @@ const renderDetails = async (area, version, path, page = 1, callTime = 1) => {
     pageSum = Math.ceil(data.length / ITEMS_PER_PAGE);
     start = (page - 1) * ITEMS_PER_PAGE;
     end = page * ITEMS_PER_PAGE;
+    console.log(start, end);
     data.slice(start, end).forEach((item) => renderItem(item));
     controlPagination(pageSum);
     if (callTime) detailPagination.scrollIntoView();
@@ -176,8 +177,6 @@ const controlPagination = (pageSum) => {
   if (pageSum <= 0) {
     detailPagination.innerHTML = "";
     detailList.innerHTML = `<p class="emptyMessage">${emptyMessage}</p>`;
-  } else if (pageSum === 1) {
-    renderPagination();
   } else {
     renderPagination();
   }
@@ -258,7 +257,8 @@ detailTypeNew.addEventListener("click", function () {
   detailTypeHot.classList.remove("active");
   detailTypeNew.classList.add("active");
   path = `./data/new.json`;
-  renderDetails(area, version, path);
+  currentPage = 1;
+  renderDetails(area, version, path, currentPage);
 });
 
 // json来源切换
@@ -266,7 +266,8 @@ detailTypeHot.addEventListener("click", function () {
   detailTypeNew.classList.remove("active");
   detailTypeHot.classList.add("active");
   path = `./data/hot.json`;
-  renderDetails(area, version, path);
+  currentPage = 1;
+  renderDetails(area, version, path, currentPage);
 });
 
 // 监听分页按钮点击事件，切换页码，渲染MV列表

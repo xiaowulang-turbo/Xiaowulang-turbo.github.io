@@ -1,5 +1,6 @@
 {
   "Codegeex.CompletionDelay": 0.2,
   "Codegeex.CompletionModel": "CodeGeeX Pro[Beta]",
-  "Codegeex.UseSimilarFileForPrompt": true
+  "Codegeex.UseSimilarFileForPrompt": true,
+  "cSpell.words": ["laquo", "raquo"]
 }
