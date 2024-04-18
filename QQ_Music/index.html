@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      MV库 - QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！
+    </title>
+    <link rel="shortcut icon" href="//y.qq.com/favicon.ico?max_age=2592000" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="./script.js"></script>
+  </head>
+
+  <body>
+    <header class="section">
+      <div class="header-main flex-header">
+        <a><img src="./data/logo.png" alt="QQ音乐" class="logo" /></a>
+        <a style="background-color: #62bf82; color: #fff; padding: 33px 20px"
+          >音乐馆</a
+        >
+        <a>我的音乐</a>
+        <a>客户端</a>
+        <a>开放平台</a>
+        <a>VIP</a>
+        <a class="anchor-input">
+          <input placeholder="搜索音乐、MV、歌单、用户" />
+          <img src="./data/search.svg" alt="search-svg" />
+        </a>
+        <div class="header-main--right">
+          <a style="font-size: 16px">登录</a>
+          <a class="right-vip">
+            <div class="right-vip--span">
+              <span>开通VIP</span>
+              <img src="./data/down.svg" height="15px" alt="down-svg" />
+            </div>
+            <div class="right-vip--select">
+              <button
+                style="
+                  border-top-left-radius: 3px;
+                  border-top-right-radius: 3px;
+                "
+              >
+                开通超级会员
+              </button>
+              <button
+                style="
+                  border-bottom-left-radius: 3px;
+                  border-bottom-right-radius: 3px;
+                "
+              >
+                开通绿钻豪华版
+              </button>
+            </div>
+          </a>
+          <a class="right-charge">
+            <div class="right-charge--span">
+              <span>充值</span>
+              <img src="./data/down.svg" height="15px" alt="down-svg" />
+            </div>
+            <div class="right-charge--select">
+              <button
+                style="
+                  border-top-left-radius: 2px;
+                  border-top-right-radius: 2px;
+                "
+              >
+                购买乐币
+              </button>
+              <button
+                style="
+                  border-bottom-left-radius: 2px;
+                  border-bottom-right-radius: 2px;
+                "
+              >
+                充值饭票
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="header-sub flex-header">
+        <a>首页</a>
+        <a>歌手</a>
+        <a>新碟</a>
+        <a>排行榜</a>
+        <a>分类歌单</a>
+        <a>电台</a>
+        <a style="color: #62bf82">MV</a>
+        <a>数字专辑</a>
+      </div>
+    </header>
+    <main>
+      <div class="tag section">
+        <div class="tag-list area-list">
+          <p class="tag-item--p">区域</p>
+          <a class="tag-item area-All active">全部</a>
+          <a class="tag-item area-HongTai">港台</a>
+          <a class="tag-item area-Mainland">内地</a>
+          <a class="tag-item area-EurAme">欧美</a>
+          <a class="tag-item area-Korea">韩国</a>
+          <a class="tag-item area-Japan">日本</a>
+        </div>
+        <div class="tag-list version-list">
+          <p class="tag-item--p">版本</p>
+          <a class="tag-item version-All active">全部</a>
+          <a class="tag-item version-Mv">MV</a>
+          <a class="tag-item version-Scene">现场</a>
+          <a class="tag-item version-Cover">翻唱</a>
+          <a class="tag-item version-Film">影视</a>
+          <a class="tag-item version-Dance">舞蹈</a>
+          <a class="tag-item version-Variety">综艺</a>
+          <a class="tag-item version-Nursery">儿歌</a>
+        </div>
+      </div>
+      <div class="detail section">
+        <div class="detail-title">
+          <div class="detail-title--tag">全部MV</div>
+          <div class="detail-type">
+            <a class="detail-type--new active">最新</a>
+            <a class="detail-type--hot">最热</a>
+          </div>
+        </div>
+        <div class="detail-list"></div>
+        <div class="detail-pagination"></div>
+      </div>
+    </main>
+  </body>
+</html>
