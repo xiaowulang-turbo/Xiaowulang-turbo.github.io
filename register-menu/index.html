@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A small menu of registration</title>
+  <link rel="icon" href="../data/angel.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-header">
+      <p>注册</p>
+    </div>
+    <form>
+      <div class="sub-container">
+        <div class="input-container">
+          <input type="text" placeholder="请输入账号" class="input-account" />
+          <img src="./icon.png" class="icon-account" />
+        </div>
+        <p class="alert-account">请输入字母开头的5-10位字母、数字或下划线</p>
+      </div>
+      <div class="sub-container">
+        <div class="input-container">
+          <input type="password" placeholder="请输入密码" class="input-password" />
+          <img src="./icon.png" class="icon-password" />
+        </div>
+        <p class="alert-password">请输入６-10位字母、数字或下划线</p>
+      </div>
+      <div class="sub-container">
+        <div class="input-container">
+          <input type="password" placeholder="请确认密码" class="input-password--ensure" />
+          <img src="./icon.png" class="icon-password--ensure" />
+        </div>
+        <p class="alert-password--ensure">两次密码不一致</p>
+      </div>
+      <div class="sub-container">
+        <div class="input-container">
+          <input type="number" placeholder="请输入手机号" class="input-phone" />
+          <img src="./icon.png" class="icon-phone" />
+        </div>
+        <p class="alert-phone">请输入正确手机号</p>
+      </div>
+      <div class="sub-container">
+        <div class="input-container">
+          <input type="email" placeholder="请输入E-mail" class="input-email" />
+          <img src="./icon.png" class="icon-email" />
+        </div>
+        <p class="alert-email">邮箱格式错误</p>
+      </div>
+      <div class="sub-container">
+        <div class="input-container">
+          <input type="text" type="text" placeholder="请输入身份证" class="input-idcardnumber" />
+          <img src="./icon.png" class="icon-idcardnumber" />
+        </div>
+        <p class="alert-idcardnumber">身份证输入有误</p>
+      </div>
+      <div><input type="submit" class="input-submit" value="注册" /></div>
+    </form>
+  </div>
+</body>
+
+</html>
